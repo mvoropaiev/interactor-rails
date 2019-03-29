@@ -1,22 +1,21 @@
-# encoding: utf-8
-
 Gem::Specification.new do |spec|
-  spec.name    = "interactor-rails"
-  spec.version = "2.2.0"
+  spec.name    = 'interactor-rails'
+  spec.version = '2.2.1'
 
-  spec.author      = "Collective Idea"
-  spec.email       = "info@collectiveidea.com"
-  spec.description = "Interactor Rails provides Rails support for the Interactor gem."
-  spec.summary     = "Rails support for Interactor"
-  spec.homepage    = "https://github.com/collectiveidea/interactor-rails"
-  spec.license     = "MIT"
+  spec.author      = 'Collective Idea'
+  spec.email       = 'info@collectiveidea.com'
+  spec.description = 'Interactor Rails provides Rails support for the ' \
+                     'Interactor gem.'
+  spec.summary     = 'Rails support for Interactor'
+  spec.homepage    = 'https://github.com/collectiveidea/interactor-rails'
+  spec.license     = 'MIT'
 
-  spec.files      = `git ls-files`.split($/)
+  spec.files      = `git ls-files`.split($INPUT_RECORD_SEPARATOR)
   spec.test_files = spec.files.grep(/^spec/)
 
-  spec.add_dependency "interactor", "~> 3.0"
-  spec.add_dependency "rails", ">= 4.2", "< 5.3"
+  spec.add_dependency 'interactor', '~> 3.0'
+  spec.add_dependency 'rails', '>= 4.2', '< 6'
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
 end
